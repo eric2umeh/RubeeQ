@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Bootstrap 4 Starter</title>
+</head>
+<body>
+
+<nav class="navbar navbar-toggleable navbar-inverse bg-inverse fixed-top">
+	<div class="container">
+		<button class="navbar-toggler navbar-toggler-right" data-toggle="collapse" data-target="#navbarCollapse">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<a href="#" class="navbar-brand">LoopLAB</a>
+		<div class="collapse navbar-collapse" id="#navbarCollapse">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a href="#" class="nav-link">Home</a>
+				</li>
+				<li class="nav-item">
+					<a href="#explore-head-section" class="nav-link">Explore</a>
+				</li>
+				<li class="nav-item">
+					<a href="#create-head-section" class="nav-link">Create</a>
+				</li>
+				<li class="nav-item">
+					<a href="#share-head-section" class="nav-link">Share</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+
+<!-- HOME SECTION -->
+<header id="home-section">
+	<div class="dark-overlay">
+		<div class="home-inner">
+			 <div class="container">
+			 	<div class="row">
+			 		<div class="col-6 col-md-4">
+			 			<!-- <h1 class="display-4">Build <strong>social profiles </strong> and gain revenue and <strong>profits</strong></h1> -->
+			 			<div class="card card-primary card-form text-center">
+							<h3>Hello Sender</h3>
+							<p>Goodday, how much do you want to send?</p>
+							<form>
+									<div class="form-group">
+										<input type="text" name="accountName" class="form-control form-control-lg" placeholder="Account Name">
+									</div>
+									<div class="form-group">
+										<input type="email" name="accountNumber" class="form-control form-control-lg" placeholder="Account Number">
+									</div>
+									<div class="form-group">
+										<select class="custom-select form-control form-control-lg">
+											<option selected>Bank</option>
+											<option value="1">Access</option>
+											<option value="2">Ecobank</option>
+											<option value="3">Zenith</option>
+										</select>
+									</div> 
+							</form>
+						</div>
+					 </div>
+					 <div class="col-6 col-md-4 align-self-center">
+						 <div class="card card-primary card-form text-center">
+							<div class="form-group">
+								<input type="number" name="amount" class="form-control form-control-lg" placeholder="Amount">
+							</div>
+							<input type="Submit" value="submit" class="btn btn-outline-secondary btn-block">
+						 </div>						
+					 </div>
+			 		<div class="col-6 col-md-4">
+			 			<div class="card card-primary card-form text-center">
+			 				<h3>Receiver</h3>
+			 				<p>Please fill out this form to receive transfer</p>
+			 				<form>
+			 					<div class="form-group">
+			 						<input type="text" name="accountName" class="form-control form-control-lg" placeholder="Account Name">
+			 					</div>
+			 					<div class="form-group">
+			 						<input type="accountNumber" name="email" class="form-control form-control-lg" placeholder="Account Number">
+			 					</div>
+			 					<div class="form-group">
+										<select class="custom-select form-control form-control-lg">
+											<option selected>Bank</option>
+											<option value="1">Access</option>
+											<option value="2">Ecobank</option>
+											<option value="3">Zenith</option>
+										</select>
+									</div> 
+			 					<!-- <div class="form-group">
+			 						<input type="password" name="password2" class="form-control form-control-lg" placeholder="Confirm Password">
+			 					</div> -->
+			 				</form>
+			 			</div>
+			 		</div>
+			 	</div>
+			 </div>
+		</div>
+	</div>
+</header>
+
+
+<!-- EXPLORE HEAD -->
+<section id="explore-head-section">
+	<div class="container">
+		<div class="row">
+			<div class="col text-center">
+				<div class="py-5">
+					<h1 class="display-4">Explore</h1>
+				<p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+				<a href="#" class="btn btn-outline-secondary"> Find Out More</a>
+				</div>				
+			</div>
+		</div>
+	</div>	
+</section>
+
+
+<!-- MAIN FOOTER -->
+<footer id="main-footer" class="bg-inverse">
+	<div class="container">
+		<div class="row">
+			<div class="col text-center">
+				<div class="py-4">
+					<h1 class="h3">LoopLAB</h1>
+					<p>Copyright &copy; 2017</p>
+					<button class="btn btn-primary" data-toggle="modal" data-target="#contactModal">Contact Us</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+
+<!-- CONTACT MODAL -->
+<div class="modal fade" id="contactModal">
+	<div class="modal-dialogue">
+		<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="contactModalLabel">Contact Us</h5>
+				<button class="close" data-dismiss="modal"><span>&times;</span> </button>
+			</div>		
+			<div class="modal-boy">
+				<form>
+					<div class="form-group">
+						<label for="name">Name</label>
+						<input type="text" class="form-control"  id="name">
+					</div>
+					<div class="form-group">
+						<label for="email">Email</label>
+						<input type="email" class="form-control"  id="email">
+					</div>
+					<div class="form-group">
+						<label for="message">Name</label>
+						<textarea class="form-control"  id="message"> </textarea>
+					</div>
+				</form>				
+			</div>
+			<div class="modal-footer">
+				<button class="btn btn-primary btn-block">Submit</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/tether.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+</body>
+</html>
